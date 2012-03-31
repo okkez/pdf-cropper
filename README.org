@@ -24,7 +24,22 @@ Clone git repository.
 
 * How to customize
 
-TODO
+Edit Rakefile.
+Specify crop size as percentage.
+
+=:skip= means that skip given pages. Page number is *one origin*.
+
+#+BEGIN_SRC ruby
+OPTIONS = {
+  :left   => 13.0,
+  :right  => 13.0,
+  :top    => 10.0,
+  :bottom => 5.0,
+  :skip   => [1],
+}
+#+END_SRC
+
+The default settings are optimized for O'Reilly Japan's ebook.
 
 * Task list
 
