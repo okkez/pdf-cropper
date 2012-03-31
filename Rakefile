@@ -18,7 +18,7 @@ task :default => :crop
 
 directory DEST_DIR
 
-desc "Crop pdf file in current directory."
+desc "Crop pdf file(s) in current directory."
 task :crop => [DEST_DIR, FileList["*.pdf"]].flatten do |t|
   t.prerequisites.each do |file|
     next if File.directory?(file)
@@ -26,7 +26,7 @@ task :crop => [DEST_DIR, FileList["*.pdf"]].flatten do |t|
   end
 end
 
-desc "Force crop pdf file in current directory."
+desc "Force crop pdf file(s) in current directory."
 task :crop_force => [DEST_DIR, FileList["*.pdf"]].flatten do |t|
   OPTIONS[:force] = true
   t.prerequisites.each do |file|
