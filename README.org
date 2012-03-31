@@ -7,7 +7,9 @@ PDF Cropper is a command line tool to generate cropped PDF for ebook readers.
 
 * How to install
 
-TODO
+Clone git repository.
+
+: $ git clone git://github.com/okkez/pdf-cropper.git
 
 * How to use
 
