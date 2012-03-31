@@ -1,0 +1,34 @@
+#+TITLE: PDF Cropper
+#+AUTHOR: okkez
+#+LANGUAGE: ja
+#+OPTIONS: ^:nil author:nil creator:nil timestamp:nil num:nil toc:1
+
+PDF Cropper is a command line tool to generate cropped PDF for ebook readers.
+
+* How to install
+
+TODO
+
+* How to use
+
+  Copy your PDF files to current directory like below.
+
+: $ ls
+: Rakefile  hoge.pdf fuga.pdf
+
+  Execute command below.
+
+: $ rake
+
+* How to customize
+
+TODO
+
+* Task list
+
+: $ rake -T
+: rake clean       # Remove any temporary products.
+: rake clobber     # Remove any generated file.
+: rake crop        # Crop pdf file in current directory.
+: rake crop_force  # Force crop pdf file in current directory.
+
