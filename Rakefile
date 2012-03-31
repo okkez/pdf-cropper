@@ -38,7 +38,7 @@ end
 def crop_pdf(filename, dest_dir, options={})
   output_file = File.join(dest_dir, filename)
   if File.exist?(output_file)
-    puts "#{output_file} is already exist."
+    puts "#{output_file} already exists."
     return unless options[:force]
   end
   skip_pages = options[:skip] || []
